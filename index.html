@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles.css/fonts.css">
   <body>
     <div class="container">
+      <div class="wrapper-header">
+        <header class="header">
         <nav class='nav'>
           <div class="nav-logo">
             <img src="image/nav/logo.svg" alt="logo">
@@ -29,7 +31,10 @@
           <button class="btn nav-btn">Login
           </button>
         </nav>
-      <section class="main">
+      </header>
+      </div>
+      <div class="wrapper-main">
+        <section class="main">
         <div class="main-text">
           <h2 class='main-descr'>CREATE, EXPLORE, COLLECT DIGITAL ART NFTs</h2>
           <h1 class="main-title">
@@ -47,10 +52,11 @@
           <img src="image/main/bg-image.svg"  class='main-image-bg1' alt="bgmain"> 
           <img src="image/main/bg2-image.svg"  class='main-image-bg2' alt="bgmain"> 
           <a>
-          <img src="image/main/bg-play.svg"  class='main-image-bgplay' alt="bgmain"> 
-          </a>
         </div>
+        <img src="image/main/bgplay.svg"  class='main-image-bgplay' alt="bgmain"> 
+          </a>
       </section>
+      </div>
       <section class="frashcollection">
         <div class="frashcollection-item"><img src="/image/frashcollection/image 01.jpg" alt="frashcollection"></div>
         <div class="frashcollection-item"><img src="/image/frashcollection/image 02.jpg" alt="frashcollection"></div>
@@ -60,7 +66,7 @@
           <div class="btn frashcollection-btn">View Item</div>
         </div>
       </section>
-      <div class="seller-wrapper">
+      <div class="wrapper-seller">
         <section class="seller">
         <div class="seller-row1">
         <select class='seller-select-bestseller' name="list1" required>
@@ -182,7 +188,8 @@
         </div>
       </section>
       </div>
-      <section class="explore">
+      <div class="wrapper-explore">
+        <section class="explore">
         <div class="explore-header">
           <h2 class="explore-title">Explore
           </h2>
@@ -287,7 +294,8 @@
               </div>
           </div>
       </section>
-      <div class="marketplace-wrapper">
+      </div>
+      <div class="wrapper-marketplace">
       <section class="marketplace">
         <div class="marketplace-header">
         <h2 class="marketplace-title">NFTs Markeplace Guide</h2>
@@ -315,28 +323,32 @@
         </div>
       </section>
       </div>
-      <section class="popular">
+      <div class="popular-wrapper">
+        <section class="popular">
         <h2 class="popular-title">Popular Artwork</h2>
-        <div class="popular-btn">
-        <button class="popular-btn">All Item</button>
-        <button class="popular-btn">Art</button>
-        <button class="popular-btn">Clebrities</button>
+        <div class="popular-btnrow">
+        <div class="popular-btnrow-left">
+          <button class="popular-btn popular-btn-allitem">All Item</button>
+        <button class="popular-btn popular-btn-art">Art</button>
+        <button class="popular-btn popular-btn-clebrities">clebrities</button>
         <button class="popular-btn">Game</button>
         <button class="popular-btn">Music</button>
         <button class="popular-btn">Video</button>
-        <button class="popular-btn">Crypto</button>
+        <button class="popular-btn">Crypto</button></div>
+        <div class="popular-btnrow-right">
+          <button class="popular-filterbtn">
+          <img src="/image/popular/filter-icon-btn.svg" alt="logo">
+          <span>Filter</span>
+        </button>
+        <button class="popular-newestbtn">
+          <img src="/image/popular/newest-icon-btn.svg" alt="icon">
+          <span>Newest</span>
+        </button>
         </div>
-        <div class="filter">
-          <div class="filter-icon"></div>
-          <button class="filter-btn">Filter</button>
         </div>
-        <div class="newest">
-          <div class="newest-icon"></div>
-          <button class="newest-btn">Newest</button>
-        </div>
-        <div class="popular-gallery">
+        <div class="gallery">
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+                <img src="image/popular/gallery-image/item01.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-item"></div>
               </div>
@@ -347,14 +359,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Music<a class='gallery-row-link' href="">
                 </a>
@@ -362,7 +374,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item02.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -373,14 +385,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Clebrities<a class='gallery-row-link' href="">
                 </a>
@@ -388,7 +400,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item03.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -399,14 +411,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Crypto<a class='gallery-row-link' href="">
                 </a>
@@ -414,7 +426,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item04.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -425,14 +437,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Music<a class='gallery-row-link' href="">
                 </a>
@@ -440,7 +452,7 @@
               </div>
             </div>
               <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+                <img src="image/popular/gallery-image/item05.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-item"></div>
               </div>
@@ -451,14 +463,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Music<a class='gallery-row-link' href="">
                 </a>
@@ -466,7 +478,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item06.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -477,14 +489,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Clebrities<a class='gallery-row-link' href="">
                 </a>
@@ -492,7 +504,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item07.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -503,14 +515,14 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Crypto<a class='gallery-row-link' href="">
                 </a>
@@ -518,7 +530,7 @@
               </div>
             </div>
             <div class="gallery-column">
-              <div class="gallery-column-image"></div>
+              <img src="image/popular/gallery-image/item08.jpg" class="gallery-column-image" alt="image">
               <div class="gallery-column-icon">
                 <div class="gallery-icon-item"></div>
               </div>
@@ -529,73 +541,84 @@
               </div>
               <div class="gallery-row">
                 <div class="gallery-row-photo">
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
-                  <div class="photo-item"></div>
+                  <img src="image/gallery/people/item01.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item02.svg" class="gallery-row-photo-item" alt="people">
+                  <img src="image/gallery/people/item03.svg" class="gallery-row-photo-item" alt="people">
+                  <div class="gallery-row-text"><span>10+ People place bit</span></div>
                 </div>
-                <div class="gallery-row-text">10+ People place bit</div>
               </div>
               <div class="gallery-row">
-                <div class="gallery-row-icon"></div>
+                <img src="image/gallery/highest-icon.svg" class='gallery-row-icon' alt="highest">
                 <div class="gallery-row-highest">Highest bit 0.001 ETH</div>
                 <button class="gallery-row-btn">Music<a class='gallery-row-link' href="">
                 </a>
               </button>
               </div>
-              <div class="loadmore"><div class="loadmore-icon"></div>
-                <button class="loadmore-btn">Load More</button>
-              </div>
             </div>
           </div>
+          <button class="btn popular-loadmorebtn">
+              <span>Load More</span>
+          </button>
       </section>
-      <section class="collection">
-        <h2 class="collection-title">Hot collections</h2>
-        <div class="collection-column">
-          <div class="collection-column">
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"><span>+30</span></div>
-            <div class="collection-subtitle">
+      </div>
+      <div class="collections-wrapper">
+        <section class="collections">
+        <h2 class="collections-title">Hot collections</h2>
+        <div class="collections-columnwrapper">
+            <div class="collections-column">
+            <div class="collections-column-left"><img src="/image/collections/col-1-item01.jpg" class="collections-item01"    alt="image">
+              <div class="collections-subtitle">
               <h3>Walking On Air</h3>
             </div>
-            <div class="collection-text">
-              <div class="collection-icon"></div>
-              <div class="collection-descr">By James Zeller</div>
+            <div class="collections-text">
+              <img src="image/collections/icon.svg" class="collections-icon" alt="icon">
+              <div class="collections-descr">By <span>James Zeller</span></div>
             </div>
+            </div>
+            <div class="collections-column-right">
+            <img src="/image/collections/col-1-item02.jpg" class="collections-item02"    alt="image">
+            <img src="/image/collections/col-1-item03.jpg" class="collections-item03"    alt="image">
+            <img src="/image/collections/col-1-item04.jpg" class="collections-item04"   alt="image">
+            </div>
+            <span class='number collections-number1'>+30</span>
           </div>
-        </div>
-        <div class="collection-column">
-          <div class="collection-column">
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"><span>+25</span></div>
-            <div class="collection-subtitle">
-              <h3>Walking On Air</h3>
+            <div class="collections-column">
+            <div class="collections-column-left"><img src="/image/collections/col-2-item01.jpg" class="collections-item01"    alt="image">
+              <div class="collections-subtitle">
+              <h3>Sunny Day Collection</h3>
             </div>
-            <div class="collection-text">
-              <div class="collection-icon"></div>
-              <div class="collection-descr">By James Zeller</div>
+            <div class="collections-text">
+              <img src="image/collections/icon.svg" class="collections-icon" alt="icon">
+              <div class="collections-descr">By <span>James Zeller</span></div>
             </div>
+            </div>
+            <div class="collections-column-right">
+            <img src="/image/collections/col-2-item02.jpg" class="collections-item02"    alt="image">
+            <img src="/image/collections/col-2-item03.jpg" class="collections-item03"    alt="image">
+            <img src="/image/collections/col-2-item03.jpg" class="collections-item04"   alt="image">
+            </div>
+            <span class='number collections-number2'>+25</span>
           </div>
-        </div>
-        <div class="collection-column">
-          <div class="collection-column">
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"></div>
-            <div class="collection-image"><span>+28</span></div>
-            <div class="collection-subtitle">
-              <h3>Walking On Air</h3>
+            <div class="collections-column">
+            <div class="collections-column-left"><img src="/image/collections/col-3-item01.jpg" class="collections-item01"    alt="image">
+              <div class="collections-subtitle">
+              <h3>Roaring & Persistent Illusion</h3>
             </div>
-            <div class="collection-text">
-              <div class="collection-icon"></div>
-              <div class="collection-descr">By James Zeller</div>
+            <div class="collections-text">
+              <img src="image/collections/icon.svg" class="collections-icon" alt="icon">
+              <div class="collections-descr">By <span>James Zeller</span></div>
             </div>
+            </div>
+            <div class="collections-column-right">
+            <img src="/image/collections/col-3-item02.jpg" class="collections-item02"    alt="image">
+            <img src="/image/collections/col-3-item03.jpg" class="collections-item03"    alt="image">
+            <img src="/image/collections/col-3-item04.jpg" class="collections-item04"   alt="image">
+            </div>
+            <span class='number collections-number3'>+28</span>
           </div>
         </div>
       </section>
+      </div>
       <div class="start-wrapper">
         <section class="start">
         <p class="start-text"><h3>SAVE YOUR TIME WITH STACKS</h3></p>
@@ -604,7 +627,8 @@
         <button class="start-btn">Discover More</button>
       </section>
       </div>
-      <div class="footer">
+      <div class="footer-wrapper">
+        <div class="footer">
         <footer class="footer-column">
           <div class="footer-logo">
             Cryptmax
@@ -649,6 +673,7 @@
           <hr>
           <span>Copyright © 2021 Cryptmax. All rights reserved</span>
         </footer>
+      </div>
       </div>
     </div>
   </body>
