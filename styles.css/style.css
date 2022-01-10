@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 500; }
 
-.gallery-row-text, .gallery-row-highest, .marketplace-about-descr {
+.nav-input, .gallery-row-text, .gallery-row-highest, .marketplace-about-descr {
   font-family: 'DMSans',sans-serif;
   font-style: normal;
   font-weight: 400; }
@@ -113,6 +113,12 @@ img {
   background-color: white;
   height: 466px; }
 
+.wrapper-footer-bottom {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: white;
+  height: 73px; }
+
 .pointer {
   width: 50px;
   height: 50px;
@@ -136,9 +142,9 @@ option {
   display: flex;
   justify-content: space-between;
   height: 110px;
-  margin-bottom: 40px;
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-bottom: 1px solid #EEEEEE; }
   .nav-btn {
     font-size: 14px;
     line-height: 18px;
@@ -169,18 +175,20 @@ option {
     line-height: 18px;
     color: #888888;
     text-decoration: none; }
-  .nav-search {
-    display: flex;
-    align-items: center; }
-    .nav-search-input {
-      border: 1.5px solid #888888;
-      border-radius: 7px;
-      margin-right: 20px;
-      padding: 13px 36px 13px 13px;
-      background-image: url(/image/nav/search-icon.svg);
-      background-repeat: no-repeat;
-      background-position-y: 50%;
-      background-position-x: 86%; }
+  .nav-input {
+    max-width: 270px;
+    height: 40px;
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 7px;
+    border: 1px solid #CCCCCC;
+    color: #888888;
+    padding: 13px 213px 13px 15px;
+    align-self: center;
+    background-image: url(../image/nav/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 35%; }
 
 .main {
   display: grid;
@@ -189,10 +197,12 @@ option {
   gap: 20px;
   max-width: 1170px;
   margin: 0 auto;
+  margin-top: 40px;
   height: 710px; }
   .main-text {
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    margin-top: 73px; }
   .main-descr {
     font-size: 14px;
     line-height: 21px;
@@ -202,7 +212,8 @@ option {
     line-height: 83px;
     color: black;
     margin: 0;
-    margin-bottom: 18px; }
+    margin-bottom: 18px;
+    white-space: nowrap; }
   .main-btn {
     font-size: 16px;
     line-height: 21px;
@@ -231,7 +242,7 @@ option {
     .main-image-bgplay {
       position: relative;
       left: 107.5%;
-      bottom: 222%; }
+      bottom: 212%; }
   .main-statistics {
     display: flex;
     justify-content: flex-start; }
@@ -604,11 +615,6 @@ option {
     border-radius: 20px;
     margin-top: 60px;
     height: 362px; }
-    .marketplace-about-icon {
-      position: relative;
-      top: 19%;
-      left: 3%;
-      display: flex; }
     .marketplace-about-title {
       display: inline-block;
       margin-top: 54px;
@@ -646,15 +652,39 @@ option {
     top: 39%;
     left: 10%; }
 
-.icon-circle {
+.icon-circle1 {
   width: 11px;
   height: 11px;
   border: 1px solid #CCCCCC;
   border-radius: 100%;
   position: absolute;
-  margin-left: -2px;
-  margin-top: -4px; }
-  .icon-circle:hover {
+  top: 55%;
+  left: 3%; }
+  .icon-circle1:hover {
+    background-color: #3772ff;
+    transition-duration: .2s; }
+
+.icon-circle2 {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #CCCCCC;
+  border-radius: 100%;
+  position: absolute;
+  top: 58%;
+  left: 3%; }
+  .icon-circle2:hover {
+    background-color: #3772ff;
+    transition-duration: .2s; }
+
+.icon-circle3 {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #CCCCCC;
+  border-radius: 100%;
+  position: absolute;
+  top: 61%;
+  left: 3%; }
+  .icon-circle3:hover {
     background-color: #3772ff;
     transition-duration: .2s; }
 
@@ -863,11 +893,11 @@ option {
 .footer {
   max-width: 1170px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 466px; }
+  height: 466px;
+  border-bottom: 1px solid  #AAAAAA; }
   .footer-column {
     position: relative;
     height: 275px; }
@@ -950,5 +980,19 @@ option {
       transition-duration: .2s; }
       .footer-social-link:hover {
         background-color: #3772ff; }
+
+.footer-bottom {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 73px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-bottom-copyright {
+    font-size: 14px;
+    line-height: 18px;
+    color: #AAAAAA;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=style.css.map */
