@@ -125,7 +125,6 @@ img {
 
 .container {
   max-width: 1940px;
-  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
   background-color: var(--color-white);
@@ -266,7 +265,7 @@ img {
   background-color: var(--color-white);
 }
 
-.howitwork {
+.howitwork__main {
   max-width: 1170px;
   margin: 0 auto;
 }
