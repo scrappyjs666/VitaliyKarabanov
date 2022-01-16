@@ -107,7 +107,6 @@ html {
 }
 
 body {
-  background-color: var(--color-white);
   font-size: 1.8rem;
   font-style: normal;
   color: #000000;
@@ -123,57 +122,25 @@ img {
   padding: 0;
 }
 
-.container {
+.wrapper {
   max-width: 1940px;
+  margin: 0 auto;
   padding: 0 10px;
-  margin: 0 auto;
   background-color: var(--color-white);
 }
 
-.wrapper-header {
-  background-color: var(--color-white);
-}
-
-.nav {
-  max-width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 40px;  
-}
-
-.wrapper-main {
-  background-color: var(--color-white);
-}
-
-.main {
-  max-width: 1330px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-
-.wrapper-frashcollection {
-  background-color: var(--color-white);
-}
-
-.frashcollection {
+.container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.wrapper-seller {
-  background-color: var(--color-white);
-}
-
-.seller {
+.container-main {
   max-width: 1330px;
   margin: 0 auto;
 }
 
-.wrapper-explore {
-  background-color: var(--color-white);
-}
-
-.explore {
-  max-width: 1170px;
+.container-seller {
+  max-width: 1330px;
   margin: 0 auto;
 }
 
@@ -181,91 +148,15 @@ img {
   background-color: rgba(246, 247, 248, 1);
 }
 
-.marketplace {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.gallery {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: grid;
-}
-
-.wrapper-popular {
-  background-color: var(--color-white);
-}
-
-.popular {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.wrapper-collections {
-  background-color: var(--color-white);
-}
-
-.collections {
-  max-width: 1170px;
-  margin: 0 auto;
-}
 
 .wrapper-start {
   background-color: rgba(246, 247, 248, 1);
 }
 
-.start {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.wrapper-footer {
-  background-color: var(--color-white);
-}
-
-.footer {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 .wrapper-footer-bottom {
-  background-color: var(--color-white);
   height: 73px;
 }
 
 .footer-bottom {
-  max-width: 1170px;
-  margin: 0 auto;
   height: 73px;
-}
-
-.wrapper-keywords {
-  background-color: var(--color-white);
-}
-
-.keywords {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.wrapper-productdetalis {
-  background-color: var(--color-white);
-}
-
-.wrapper-bestseller {
-  background-color: var(--color-white);
-}
-
-.best-seller {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.wrapper-howitwork {
-  background-color: var(--color-white);
-}
-
-.howitwork__main {
-  max-width: 1170px;
-  margin: 0 auto;
 }
