@@ -22,6 +22,12 @@
   left: 50%;
   top: 57%;
   }
+  .collections__title {
+    margin-left: 0;
+  }
+  .keywords__select {
+    margin-left: 0;
+  }
 }
 
 @media (max-width:1190px) {
@@ -37,6 +43,9 @@
   }
   .nav {
   margin-top: 20px;
+  }
+  .nav__productdetalis {
+    grid-template-columns: repeat(3, 1fr);
   }
   .nav__text {
   margin-right: 30px;
@@ -55,9 +64,6 @@
   }
   .seller-item {
     min-width: 235px ;
-  }
-  .seller__select_right_btn {
-    left: 85.5%;
   }
   .seller__pointer_right {
     display: none;
@@ -87,6 +93,9 @@
     top: 60%;
     left: 80%;
   }
+  .column-right__image:not(:last-child) {
+    margin-bottom: 1px;
+  }
 }
 
 @media (max-width:990px) {
@@ -104,7 +113,7 @@
   }
   .footer {
     display: grid;
-    grid-template-columns: repeat(1 , 1fr);
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
     justify-items: center;
   }
@@ -136,11 +145,20 @@
   .nav__input {
     width: 300px;
     justify-self: center;
+    grid-column: 2;
+  }
+  .nav__profile {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 180px;
   }
   .nav__btn {
     min-width: 170px;
-    justify-self: center;
     background-position-x: 19%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 2;
+    max-width: 185px;
   }
   .main {
     display: block;
@@ -166,6 +184,9 @@
   }
   .frashcollection-text__btn {
     width: 170px;
+  }
+  .frashcollection-text__title {
+    max-width: 350px;
   }
   .seller__row2 {
     column-gap: 30px;
@@ -198,10 +219,6 @@
   .keywords__select { 
     margin-bottom: 20px;
   }
-  .keywords-button_arrow {
-    top: 13%;
-    left: 37%;
-  }
   .keywords__nav {
     display: grid;
     justify-content: center;
@@ -214,6 +231,10 @@
   }
   .keywords__text {
     margin-bottom: 20px;
+  }
+  .keywords-button_arrow {
+    top: 15%;
+    left: 37%;
   }
   .productdetalis {
     grid-template-columns: repeat(1, 1fr);
@@ -270,6 +291,12 @@
   }
   .collections__row03 {
     justify-content: left;
+  }
+  .column-right__image:not(:last-child) {
+  margin-bottom: 7px;
+  }
+  .productdetalis__image {
+    max-width: 70%;
   }
 }
 

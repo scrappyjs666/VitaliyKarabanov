@@ -130,19 +130,11 @@ img {
 }
 
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.container-main {
   max-width: 1330px;
   margin: 0 auto;
 }
 
-.container-seller {
-  max-width: 1330px;
-  margin: 0 auto;
-}
+
 
 .wrapper-marketplace {
   background-color: rgba(246, 247, 248, 1);
@@ -151,12 +143,4 @@ img {
 
 .wrapper-start {
   background-color: rgba(246, 247, 248, 1);
-}
-
-.wrapper-footer-bottom {
-  height: 73px;
-}
-
-.footer-bottom {
-  height: 73px;
 }

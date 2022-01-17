@@ -60,13 +60,13 @@
             <div class="btn main__btn">Explore</div>
             <div class="main-statistics">
               <div class="main-statistics__item">
-                <span>19K+</span><br />Atwork
+                <span class="statistics-item__descr">19K+</span><br />Atwork
               </div>
               <div class="main-statistics__item">
-                <span>13K+</span><br />Auction
+                <span class="statistics-item__descr">13K+</span><br />Auction
               </div>
               <div class="main-statistics__item">
-                <span>8K+</span><br />Artist
+                <span class="statistics-item__descr">8K+</span><br />Artist
               </div>
             </div>
           </div>
@@ -136,16 +136,18 @@
               <option>James Watson</option>
               <option>Hazel Abron</option>
             </select>
-            <select class="seller__select_right" name="list1" required>
-              <option>Today</option>
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-              <option>Thursday</option>
-              <option>Friday</option>
-              <option>Last week</option>
-              <option>Last month</option>
-            </select>
-            <button class="seller__select_right_btn"></button>
+            <div class="seller__select_right">
+              <select class="select_right__item" name="list1" required>
+                <option>Today</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Last week</option>
+                <option>Last month</option>
+              </select>
+              <button class="seller__select_right_btn"></button>
+            </div>
           </div>
           <div class="seller__row2">
             <button class="pointer seller__pointer_left"></button>
@@ -1191,13 +1193,9 @@
           </div>
         </footer>
       </div>
-    </div>
-    <div class="wrapper wrapper-footer-bottom">
-      <div class="container">
-        <div class="footer__bottom">
-          <div class="footer-bottom__copyright">
-            Copyright © 2021 Cryptmax. All rights reserved
-          </div>
+      <div class="footer__bottom">
+        <div class="footer-bottom__copyright">
+          Copyright © 2021 Cryptmax. All rights reserved
         </div>
       </div>
     </div>
