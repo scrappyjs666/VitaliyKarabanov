@@ -1,6 +1,7 @@
 
 
 /*# sourceMappingURL=style.css.map */
+@import "normalize.css";
 @import url('./global/fonts.css');
 @import url('./global/vars.css');
 @import url('./global/base.css');

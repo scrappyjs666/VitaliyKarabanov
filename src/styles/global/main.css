@@ -43,7 +43,7 @@ option {
   @extend %fDMSANS500;
   font-size: 14px;
   line-height: 18px;
-  background-image: url(../images/nav/login-icon.svg);
+  background-image: url(/images/nav/login-icon.svg);
   background-repeat: no-repeat;
   align-items: center;
   align-self: center;
@@ -100,7 +100,7 @@ option {
   color: #888888;
   padding: 13px 110px 13px 15px;
   align-self: center;
-  background-image: url(../images/nav/search-icon.svg);
+  background-image: url(/images/nav/search-icon.svg);
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 35%;
@@ -151,7 +151,7 @@ option {
   min-width: 150px;
   height: 50px;
   padding: 15px 65px 14px 26px;
-  background-image: url(../images/main/btn-arrow.svg);
+  background-image: url(/images/main/btn-arrow.svg);
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 85.5%;
@@ -264,7 +264,7 @@ option {
   border: none;
   appearance: none;
   background-repeat: no-repeat;
-  background-image: url(../images/seller/BestSellerArrow.svg);
+  background-image: url(/images/seller/BestSellerArrow.svg);
   background-position-x: 95%;
   background-position-y: 50%;
   min-width: 330px;
@@ -292,7 +292,7 @@ option {
   height: 35px;
   border-radius: 100%;
   background-color: var(--color-blue);
-  background-image: url(../images/seller/TodayArrow.svg);
+  background-image: url(/images/seller/TodayArrow.svg);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -419,12 +419,12 @@ option {
 
 .seller__pointer_left {
   align-self: center;
-  background-image: url(../images/seller/GrayArrowLeft.svg);
+  background-image: url(/images/seller/GrayArrowLeft.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition-duration: .2s;
   &:hover {
-  background-image: url(../images/seller/BlueArrowLeft.svg);
+  background-image: url(/images/seller/BlueArrowLeft.svg);
   background-repeat: no-repeat;
   background-position: center;
   }
@@ -432,12 +432,12 @@ option {
 
 .seller__pointer_right {
   align-self: center;
-  background-image: url(../images/seller/GraArrowRight.svg);
+  background-image: url(/images/seller/GraArrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition-duration: .2s;
   &:hover {
-  background-image: url(../images/seller/BlueArrowRight.svg);
+  background-image: url(/images/seller/BlueArrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   }
@@ -446,7 +446,6 @@ option {
 
 .explore {
   display: grid;
-  justify-content: center;
   align-content: center;
 }
 
@@ -470,13 +469,13 @@ option {
   min-width: 35px;
   height: 35px;
   align-self: center;
-  background-image: url(../images/explore/GrayArrowLeft.svg);
+  background-image: url(/images/explore/GrayArrowLeft.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition-duration: .2s;
   margin-right: 10px;
 &:hover {
-  background-image: url(../images/explore/WhiteArrowLeft.svg);
+  background-image: url(/images/explore/WhiteArrowLeft.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-blue);
@@ -487,12 +486,12 @@ option {
   min-width: 35px;
   height: 35px;
   align-self: center;
-  background-image: url(../images/explore/GrayArrowRight.svg);
+  background-image: url(/images/explore/GrayArrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition-duration: .2s;
   &:hover {
-  background-image: url(../images/explore/WhiteArrowRight.svg);
+  background-image: url(/images/explore/WhiteArrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-blue);
@@ -524,7 +523,7 @@ option {
   padding: 15px 15px 15px 15px;
   background-color: var(--color-white);
   border-radius: 100%;
-  background-image: url(../images/gallery/heart.svg);
+  background-image: url(/images/gallery/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -533,7 +532,7 @@ option {
   cursor: pointer;
   transition: .2s ease-in-out;
 &:hover {
-  background-image: url(../images/gallery/heartred.svg);
+  background-image: url(/images/gallery/heartred.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid red;
@@ -549,7 +548,7 @@ option {
   position: absolute;
   top: 55%;
   left: 25%;
-  background-image: url(../images/gallery/iconbtn.svg);
+  background-image: url(/images/gallery/iconbtn.svg);
   background-repeat: no-repeat;
   background-position-x: 80%;
   background-position-y: 50%;
@@ -619,13 +618,14 @@ margin-bottom: 15px;
   font-size: 11px;
   line-height: 14px;
   margin-left: 9px;
-& span {
+}
+
+.highest__descr {
   @extend %fDMSANS700;
   font-size: 11px;
   line-height: 14px;
   color: var(--color-black);
   }
-}
 
 .gallery-row__btn {
   @extend %fDMSANS500;
@@ -683,7 +683,7 @@ margin-bottom: 15px;
   min-width: 35px;
   height: 35px;
   align-self: center;
-  background-image: url(../images/marketplace/WhiteArrowRight.svg);
+  background-image: url(/images/marketplace/WhiteArrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -758,7 +758,7 @@ margin-bottom: 15px;
   &::before {
     content: '';
     background-image: 
-    url(../images/marketplace/сustomcircle.svg);
+    url(/images/marketplace/сustomcircle.svg);
     background-repeat: no-repeat;
     min-width: 7px;
     height: 7px;
@@ -778,7 +778,7 @@ margin-bottom: 15px;
     border-radius: 100%;
     border: none;
     background-image: 
-    url(../images/marketplace/btnquestion-icon.svg);
+    url(/images/marketplace/btnquestion-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -901,7 +901,7 @@ margin-bottom: 15px;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/popular/loadmore-icon-btn.svg);
+  background-image: url(/images/popular/loadmore-icon-btn.svg);
   background-repeat: no-repeat;
   background-position-x: 17%;
   background-position-y: 50%;
@@ -1016,7 +1016,7 @@ margin-bottom: 15px;
 .collections-row__icon {
   min-width: 25px;
   height: 25px;
-  background-image:url(../images/collections/icon.svg);
+  background-image:url(/images/collections/icon.svg);
   border-radius: 100%;
   float: left;
   margin-right: 10px;
@@ -1071,7 +1071,7 @@ margin-bottom: 15px;
   padding: 15px 24px 14px 24px;
   position: absolute;
   display: block;
-  top: 44%;
+  top: 45%;
   left: 60%;
 }
 
@@ -1207,7 +1207,7 @@ margin-bottom: 15px;
   background-color: var(--color-blue);
   border-radius: 100%;
   border: none;
-  background-image:url(../images/footer/input-btn-icon.svg);
+  background-image:url(/images/footer/input-btn-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -1217,30 +1217,30 @@ margin-bottom: 15px;
 
 
 .social-item__linkfb {
-  background-image: url(../images/footer/fb-icon-gray.svg);
+  background-image: url(/images/footer/fb-icon-gray.svg);
   &:hover {
-  background-image: url(../images/footer/fb-icon-white.svg);
+  background-image: url(/images/footer/fb-icon-white.svg);
   }
 }
 
 .social-item__linktw {
-  background-image: url(../images/footer/tw-icon-gray.svg);
+  background-image: url(/images/footer/tw-icon-gray.svg);
   &:hover {
-  background-image: url(../images/footer/tw-icon-white.svg);
+  background-image: url(/images/footer/tw-icon-white.svg);
   }
 }
 
 .social-item__linkinst {
-  background-image: url(../images/footer/inst-icon-gray.svg);
+  background-image: url(/images/footer/inst-icon-gray.svg);
   &:hover {
-  background-image: url(../images/footer/inst-icon-white.svg);
+  background-image: url(/images/footer/inst-icon-white.svg);
   }
 }
 
 .social-item__linkin {
-  background-image: url(../images/footer/in-icon-gray.svg);
+  background-image: url(/images/footer/in-icon-gray.svg);
   &:hover {
-  background-image: url(../images/footer/in-icon-white.svg)
+  background-image: url(/images/footer/in-icon-white.svg)
   }
 }
 
@@ -1312,7 +1312,7 @@ margin-bottom: 15px;
   min-width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-image: url(../images/keywords/keywords-search-icon.svg);
+  background-image: url(/images/keywords/keywords-search-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1342,7 +1342,7 @@ margin-bottom: 15px;
   border-radius: 100%;
   border: 1.5px solid #CCCCCC;
   background-color: var(--color-white);
-  background-image: url(../images/keywords/keywords-arrow-icon.svg);
+  background-image: url(/images/keywords/keywords-arrow-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -1652,7 +1652,7 @@ margin-bottom: 15px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 15px;
-  background-image: url(../images/best-seller/link-icon.svg);
+  background-image: url(/images/best-seller/link-icon.svg);
   background-repeat: no-repeat;
   background-position-x: 94%;
   background-position-y: 50%;
@@ -1682,34 +1682,34 @@ margin-bottom: 15px;
 }
 
 .bestseller-social-item__linkfb {
-  background-image: url(../images/best-seller/fb-GRAY.svg);
+  background-image: url(/images/best-seller/fb-GRAY.svg);
   &:hover {
     background-color: var(--color-blue);
-    background-image: url(../images/best-seller/fb-white.svg);
+    background-image: url(/images/best-seller/fb-white.svg);
   }
 }
 
 .bestseller-social-item__linktw {
-  background-image: url(../images/best-seller/tw-gray.svg);
+  background-image: url(/images/best-seller/tw-gray.svg);
   &:hover {
     background-color: var(--color-blue);
-    background-image: url(../images/best-seller/tw-white.svg);
+    background-image: url(/images/best-seller/tw-white.svg);
   }
 }
 
 .bestseller-social-item__linkinst {
-  background-image: url(../images/best-seller/inst-gray.svg);
+  background-image: url(/images/best-seller/inst-gray.svg);
   &:hover {
     background-color: var(--color-blue);
-    background-image: url(../images/best-seller/inst-white.svg);
+    background-image: url(/images/best-seller/inst-white.svg);
   }
 }
 
 .bestseller-social-item__linkin {
-  background-image: url(../images/best-seller/in-gray.svg);
+  background-image: url(/images/best-seller/in-gray.svg);
   &:hover {
     background-color: var(--color-blue);
-    background-image: url(../images/best-seller/in-white.svg);
+    background-image: url(/images/best-seller/in-white.svg);
   }
 }
 
@@ -1784,37 +1784,37 @@ margin-bottom: 15px;
 }
 
 .column-left__item01 {
-  background-image: url(../images/howitwork/column-item01-gray.svg);
+  background-image: url(/images/howitwork/column-item01-gray.svg);
   &:hover {
-  background-image: url(../images/howitwork/column-item01.svg);
+  background-image: url(/images/howitwork/column-item01.svg);
   }
 }
 
 .column-left__item02 {
-  background-image: url(../images/howitwork/column-item02.svg);
+  background-image: url(/images/howitwork/column-item02.svg);
   &:hover {
-  background-image: url(../images/howitwork/column-item02-white.svg);
+  background-image: url(/images/howitwork/column-item02-white.svg);
   }
 }
 
 .column-left__item03 {
-  background-image: url(../images/howitwork/column-item03.svg);
+  background-image: url(/images/howitwork/column-item03.svg);
   &:hover {
-  background-image: url(../images/howitwork/column-item03-white.svg);
+  background-image: url(/images/howitwork/column-item03-white.svg);
   }
 }
 
 .column-left__item04 {
-  background-image: url(../images/howitwork/column-item04.svg);
+  background-image: url(/images/howitwork/column-item04.svg);
   &:hover {
-  background-image: url(../images/howitwork/column-item04-white.svg);
+  background-image: url(/images/howitwork/column-item04-white.svg);
   }
 }
 
 .column-left__item05 {
-  background-image: url(../images/howitwork/column-item05.svg);
+  background-image: url(/images/howitwork/column-item05.svg);
   &:hover {
-  background-image: url(../images/howitwork/column-item05-white.svg);
+  background-image: url(/images/howitwork/column-item05-white.svg);
   }
 }
 
@@ -1836,7 +1836,7 @@ margin-bottom: 15px;
 
 .column-right_item1 {
   margin-bottom: 0;
-  background-image: url(../images/howitwork/howitwork-arrow.svg);
+  background-image: url(/images/howitwork/howitwork-arrow.svg);
   background-position-y: 55%;
   background-position-x: 98%;
 }
@@ -1852,26 +1852,26 @@ margin-bottom: 15px;
 }
 
 .column-right_item2 {
-  background-image: url(../images/howitwork/howitwork-arrow.svg);
+  background-image: url(/images/howitwork/howitwork-arrow.svg);
   background-position-y: 35%;
   background-position-x: 98%;
 }
 
 .column-right_item3 {
-  background-image: url(../images/howitwork/howitwork-arrow.svg);
+  background-image: url(/images/howitwork/howitwork-arrow.svg);
   background-position-y: 35%;
   background-position-x: 98%;
 }
 
 .column-right_item4 {
-  background-image: url(../images/howitwork/howitwork-arrow.svg);
+  background-image: url(/images/howitwork/howitwork-arrow.svg);
   background-position-y: 35%;
   background-position-x: 98%;
 }
 
 .column-right_item5 {
   border-bottom: 1px solid #EEEEEE;
-  background-image: url(../images/howitwork/howitwork-arrow.svg);
+  background-image: url(/images/howitwork/howitwork-arrow.svg);
   background-position-y: 45%;
   background-position-x: 98%;
 }
