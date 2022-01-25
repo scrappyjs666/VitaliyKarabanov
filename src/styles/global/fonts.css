@@ -1,0 +1,52 @@
+/* @font-face шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap');
+
+@font-face {
+  font-family: 'DMSans';
+  src: url(../fonts/DM_Sans/DMSans-Bold.woff),
+  url(../fonts/DM_Sans/DMSans-Bold.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url(../fonts/DM_Sans/DMSans-Medium.woff),
+  url(../fonts/DM_Sans/DMSans-Medium.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url(../fonts/DM_Sans/DMSans-Regular.woff),
+  url(../fonts/DM_Sans/DMSans-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins/Poppins-Medium.woff),
+  url(../fonts/Poppins/Poppins-Medium.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppinss';
+  src: url(../fonts/Poppins/Poppins-SemiBold.woff),
+  url(../fonts/Poppins/Poppins-SemiBold.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppinss';
+  src: url(../fonts/Poppins/Poppins-Regular.woff),
+  url(../fonts/Poppins/Poppins-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+
