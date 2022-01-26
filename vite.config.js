@@ -1,9 +1,13 @@
-const { resolve } = require('path')
-const { defineConfig } = require('vite')
+const {
+  resolve
+} = require('path')
+const {
+  defineConfig
+} = require('vite')
 
 module.exports = defineConfig({
   root: 'src',
-  base: '/nft-layout/dist/',
+  base: '/nft-layout/dist1/',
   build: {
     outDir: '../dist',
     rollupOptions: {
