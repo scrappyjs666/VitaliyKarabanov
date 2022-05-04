@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="./favicons/favicon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="description" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="images/logo.png"
+          alt="image GitHub logo"
+          class="header__logo"
+        />
+        <div class="header__input">
+          <form action="#" type="submit">
+            <input
+              placeholder="Enter GitHub username"
+              type="text"
+              class="input"
+            />
+          </form>
+          <button class="header__loupe"></button>
+        </div>
+      </header>
+      <main class="hero">
+        <section class="user__profile">
+          <img
+            src="images/heroimage.png"
+            alt="user image"
+            class="user-profile__img"
+          />
+          <h2 class="user-profile__name">Dan Abramov</h2>
+          <a href="#">
+            <h3 class="user-profile__descr">gaearon</h3>
+          </a>
+          <div class="user-profile__social">
+            <div
+              class="user-profile-followers__image user-profile-social__image"
+            ></div>
+            <div class="user-profile__followers user-profile-social__text">
+              65.8k followers
+            </div>
+            <div
+              class="user-profile-following__image user-profile-social__image"
+            ></div>
+            <div class="user-profile__following user-profile-social__text">
+              171 following
+            </div>
+          </div>
+        </section>
+        <section class="user__repositories">
+          <div class="user-repositories__title">Repositories (249)</div>
+          <ul class="card__list">
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">react-hot-loader</div>
+              </a>
+              <div class="user-card__descr">
+                Tweak React components in real time. (Deprecated: use Fast
+                Refresh instead.
+              </div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">overreacted.io</div>
+              </a>
+              <div class="user-card__descr">Personal blog by Dan Abramov.</div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">whatthefuck.is</div>
+              </a>
+              <div class="user-card__descr">
+                An opinionated glossary of computer science terms for front-end
+                developers. Written by Dan Abramov.
+              </div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">react-deep-force-update</div>
+              </a>
+              <div class="user-card__descr">react-deep-force-update</div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <div class="pagination__text">5-8 of 249 items</div>
+            <ul class="pagination__list">
+              <button class="pagination__arrowleft"></button>
+              <button class="pagination__item">1</button>
+              <button class="pagination__item">2</button>
+              <button class="pagination__item">3</button>
+              <button class="pagination__item">...</button>
+              <button class="pagination__item">10</button>
+              <button class="pagination__arrowright"></button>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

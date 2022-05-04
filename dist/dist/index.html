@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUGVYSWZNTQAqAAAACAACARIAAwAAAAEAAQAAh2kABAAAAAEAAAAmAAAAAAADoAEAAwAAAAEAAQAAoAIABAAAAAEAAABgoAMABAAAAAEAAABgAAAAALvucVAAAAFZaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA2LjAuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Chle4QcAAAFOSURBVHgB7dOxDQAgDMTAwP47AwU7XGOk1JZsfs3MeddDBjbihv0GCoC/QgEKgA1gfAsoADaA8S2gANgAxreAAmADGN8CCoANYHwLKAA2gPEtoADYAMa3gAJgAxjfAgqADWB8CygANoDxLaAA2ADGt4ACYAMY3wIKgA1gfAsoADaA8S2gANgAxreAAmADGN8CCoANYHwLKAA2gPEtoADYAMa3gAJgAxjfAgqADWB8CygANoDxLaAA2ADGt4ACYAMY3wIKgA1gfAsoADaA8S2gANgAxreAAmADGN8CCoANYHwLKAA2gPEtoADYAMa3gAJgAxjfAgqADWB8CygANoDxLaAA2ADGt4ACYAMY3wIKgA1gfAsoADaA8S2gANgAxreAAmADGN8CCoANYHwLKAA2gPEtoADYAMa3gAJgAxjfAgqADWB8CygANoDxLQAHuIueAb+yRFzqAAAAAElFTkSuQmCC"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="description" />
+    <title>Index</title>
+    <script type="module" crossorigin src="/test/dist/assets/index.598a2c84.js"></script>
+    <link rel="stylesheet" href="/test/dist/assets/index.967a41fd.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKVSURBVHgBzVmBdZwwDNXd6wB0groThExQOkFug6MTlE5w1wmaDUgnaDKBrxNcMwF0ArKBKgXTR/xs2XCY5L+ng1iy9BFGFmQDM4GIGR12JJ9IchL+W41M2pH8JjltNpsWUoOJkVQkGudBk5SQCuT8K0mHy6BZlCw5Uzg/czFkFVwCcrDH5bLnA/uvYA5o4gHXxeGtE5xGFPsH5DWxtzltLIKKDmfoa94YLclPkiuSwqGfgieSe5K/JDfQ11hbf+2tqdg/bS6UI5uhVrpsOzPeeXRH7DeBwVeFbmgfwRL9KBz2ygQt0VNGaDwn2dnkLL0P1ZQsMj5AApgL9aEbLmxrjEt4ue/aeA9pkAV0JZ9szcAeZBSQBnlAf/P8G0g54hJblwcmdmhHy0IPDGLKrgUgLj791IJBAysgkM2a16QS5j/COngQdHmI5B9YB62gy0Ikn2AdtIJObUHGJXv0FChJ+VZIinGYZCvor2AdSHFaJimtuxwdjUECSDvPM0mpzAzv1slgNgspEY8xFb9JmU2Uu6//O06GYfyABGC/EbHVYKwjjGtcqNEwiakjYurxJLuNP2PfTWtrvEGhE48kd8D4d/nSntxZJJXRHT0O2OYXyS5AjF8fagyvPRuNy5mdTSadG92t4ExBOHtzvoKUPofaMmxMEJazw9E9RIDs7nAaGsmZq1OurGxrQ75Gk+kIktUEghxfhRzadbPBC+skhmuxMykhp0cHUQUzMYHk0TX/nWuQPnEwST4dPiApEiZ6gpcNyQPZRq3LCHznuDAV2K8l6cksI/1ImexCfsR+kq7slg7XILdzl+AE/cepO8ko1PQy0ZbkI51+geXIcnv4jfx+TvIfCXPrtLlNReScwtxabZbQpGrxD5rvynDSFdj8AAAAAElFTkSuQmCC"
+          alt="image GitHub logo"
+          class="header__logo"
+        />
+        <div class="header__input">
+          <form action="#" type="submit">
+            <input
+              placeholder="Enter GitHub username"
+              type="text"
+              class="input"
+            />
+          </form>
+          <button class="header__loupe"></button>
+        </div>
+      </header>
+      <main class="hero">
+        <section class="user__profile">
+          <img
+            src="/test/dist/assets/heroimage.f2ec7bd7.png"
+            alt="user image"
+            class="user-profile__img"
+          />
+          <h2 class="user-profile__name">Dan Abramov</h2>
+          <a href="#">
+            <h3 class="user-profile__descr">gaearon</h3>
+          </a>
+          <div class="user-profile__social">
+            <div
+              class="user-profile-followers__image user-profile-social__image"
+            ></div>
+            <div class="user-profile__followers user-profile-social__text">
+              65.8k followers
+            </div>
+            <div
+              class="user-profile-following__image user-profile-social__image"
+            ></div>
+            <div class="user-profile__following user-profile-social__text">
+              171 following
+            </div>
+          </div>
+        </section>
+        <section class="user__repositories">
+          <div class="user-repositories__title">Repositories (249)</div>
+          <ul class="card__list">
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">react-hot-loader</div>
+              </a>
+              <div class="user-card__descr">
+                Tweak React components in real time. (Deprecated: use Fast
+                Refresh instead.
+              </div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">overreacted.io</div>
+              </a>
+              <div class="user-card__descr">Personal blog by Dan Abramov.</div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">whatthefuck.is</div>
+              </a>
+              <div class="user-card__descr">
+                An opinionated glossary of computer science terms for front-end
+                developers. Written by Dan Abramov.
+              </div>
+            </li>
+            <li class="user__card">
+              <a href="#" target="_blank">
+                <div class="user-card__title">react-deep-force-update</div>
+              </a>
+              <div class="user-card__descr">react-deep-force-update</div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <div class="pagination__text">5-8 of 249 items</div>
+            <ul class="pagination__list">
+              <button class="pagination__arrowleft"></button>
+              <button class="pagination__item">1</button>
+              <button class="pagination__item">2</button>
+              <button class="pagination__item">3</button>
+              <button class="pagination__item">...</button>
+              <button class="pagination__item">10</button>
+              <button class="pagination__arrowright"></button>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    
+  </body>
+</html>
