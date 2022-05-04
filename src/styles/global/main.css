@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+.container {
+  width: 100%;
+  max-width: 1406px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: var(--color-bg);
+}
+:root {
+  --color-blue: rgba(0, 100, 235, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-bg: rgba(229,229,229);
+  --color-pagination: rgba(128, 128, 128, 1);
+  --family-inter: 'inter', sans-serif;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fw-light: 400;
+  --fw-normal: 500;
+  --fw-bold: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-blue);
+}
+
+.header__logo {
+  margin: 16px 27px 16px 41px;
+}
+
+.header__input {
+  position: relative;
+}
+
+.input {
+  width: 500px;
+  border-radius: 6px;
+  border: none;
+  padding: 11px 0 11px 41px;
+  color: var(--color-black);
+  font-weight: var(--fw-light);
+  line-height: 17px;
+  letter-spacing: 1%;
+}
+
+input::placeholder {
+  color: var(--color-gray);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-14);
+  line-height: 17px;
+  letter-spacing: 1%;
+}
+
+.header__loupe {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  cursor: pointer;
+  border: none;
+  background-image: url(/images/loupe.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  background-color: var(--color-bg);
+  padding: 30px 56px;
+}
+
+
+.user-profile__img {
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 50%;
+  margin-bottom: 29px;
+}
+
+
+.user-profile__name {
+  color: var(--color-black);
+  line-height: 34px;
+  font-size: 26px;
+  font-weight: var(--fw-bold);
+  margin-bottom: 12px;
+}
+
+.user-profile__descr {
+  color: var(--color-blue);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-18);
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.user-profile__social {
+  display: flex;
+}
+
+.user-profile-social__text {
+  font-size: var(--fs-16);
+  line-height: 24px;
+  font-weight: var(--fw-light);
+  color: var(--color-black);
+}
+
+.user-profile-social__image {
+  margin-right: 12px; 
+}
+
+.user-profile-followers__image  {
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/social_followers.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.user-profile-following__image {
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/social_following.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.user-profile__followers {
+  margin-right: 20px;
+}
+
+
+.user__repositories {
+  margin-left: 96px
+}
+
+.user-repositories__title {
+  color: var(--color-black);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-32);
+  line-height: 42px;
+  margin-bottom: 29px;
+}
+
+.user__card {
+  max-width: 877px;
+  background-color: var(--color-white);
+  padding: 24px 32px;
+  border-radius: 6px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+
+.user-card__title {
+  color: var(--color-blue);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-24);
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.user-card__descr {
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: var(--fw-light);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  color: var(--color-pagination);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-14);
+  line-height: 21px;
+  max-width: 877px;
+  margin-top: 30px;
+}
+
+.pagination__text {
+  margin-right: 24px;
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination__item {
+  background-color: transparent;
+  border: none;
+}
+
+.pagination__arrowleft {
+  width: 7px;
+  height: 12px;
+  transform: rotate(180deg);
+  margin-right: 25px;
+  cursor: pointer;
+  border: none;
+  background-image: url(/images/arrowleft.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.pagination__arrowright {
+  width: 7px;
+  height: 12px;
+  margin-left: 26px;
+  cursor: pointer;
+  border: none;
+  background-image: url(/images/arrowright.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
