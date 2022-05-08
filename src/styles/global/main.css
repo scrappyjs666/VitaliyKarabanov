@@ -1,7 +1,21 @@
 /* стили элементов, блоков, которые повторяются на разных страницах */
+
+body { 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 14px;
+  overflow: auto;
+  color: #333;
+  background-color: #111;
+  position: relative;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
 .swiper {
   max-width: 1400px;
-  max-height: 300px;
+  max-height: 900px;
   text-align: center;
 }
 
@@ -9,6 +23,9 @@
   display: grid;
   text-align: center;
   justify-content: center;
+  justify-items: center;
+  max-height: 900px;
+  gap: 20px;
 }
 
 .swiper-slide__descr {
@@ -19,6 +36,7 @@
 
 
 .swiperTitle {
+  min-height: 100px;
   margin-bottom: 10px;
   font-size: 30px;
   text-shadow: 1px 1px 10px greenyellow;
@@ -45,38 +63,35 @@
 
 .swiper-button-next, .swiper-button-prev {
   top: 45% !important;
-}
-
-body { 
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-size: 14px;
-  overflow: auto;
-  color: #333;
-  background-color: #111;
-  position: relative;
-  line-height: 1.5;
-  letter-spacing: 1px;
+  background: #000;
+  text-shadow: 1px 1px 10px greenyellow;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 .canvas {
+  width: 100%;
   display: block;
   position: absolute;
   pointer-events: none;
+  top: 0;
+  bottom: 0;
 }
 
 .bg-video {
   -o-object-fit: cover;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0; 
 }
 
+.hero {
+  padding: 0 0 20px 0;
+}
 
 .container {
   max-width: 1400px;
@@ -85,19 +100,21 @@ body {
 }
 
 .main-content__container {
-  display: grid;
-  justify-content: center;
   padding: 20px;
   z-index: 20;
-  height: 95vh;
+}
+
+.main__content {
   opacity: 1;
   border-radius: 25px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
   box-shadow: inset 0 0 0 4000px rgba(255, 255, 255, 0.3); 
 }
 
 .header {
+      max-width: 1406px;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   justify-content: space-evenly;
   font-size: 25px;
@@ -142,9 +159,9 @@ body {
 
 
 .button {
+  padding: 0;
   font-size: 25px;
   border: none;
-  padding: 5px;
   background: transparent;
   font-family: 'cyberpunk', sans-serif;
 }
@@ -169,6 +186,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+  padding: 0 0 0 10px;
 }
 
 .about-photo__descr {
@@ -206,11 +224,12 @@ body {
 .about-cv__buttons {
   display: flex;
   gap: 40px;
+  grid-column-start: 2;
+  padding: 0 0 20px 20px;
 }
 
 .preview-block__btn {
-    max-width: 350px;
-    margin-top: 35px;
+  max-width: 320px;
 }
 
 .custom-btn {
@@ -295,3 +314,133 @@ body {
 @-webkit-keyframes slideme { 0% { left: -30px; margin-left: 0px; }
   30% { left: 110%; margin-left: 80px; }
   100% { left: 110%; margin-left: 80px; } };
+
+  .contacts-text {
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px 10px greenyellow;
+    margin-bottom: 20px;
+  }
+
+  .contacts-social {
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 1px 1px 10px greenyellow;
+  }
+
+  address {
+    display: grid;
+    justify-content: center;
+    font-size: 26px;
+    margin-top: 25px;
+    gap: 20px;
+    text-shadow: 1px 1px 10px #fff;
+  }
+
+  .contacts-social__gmail::before {
+    display: flex;
+    float: left;
+    margin-right: 5px;
+    content: url(/images/gmail.png);
+  }
+
+  .contacts-social__phone::before {
+    display: flex;
+    float: left;
+    margin-right: 5px;
+    content: url(/images/telephone-call.png);
+  }
+
+  .contacts__city::before {
+    float: left;
+    margin-right: 5px;
+    content: url(/images/address.png);
+  }
+
+
+.contacts__city {
+  text-decoration: none;
+}
+
+.contacts__city::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.contacts__city:hover::after {
+  width: 100%;
+}
+
+.contacts-social__gmail {
+  text-decoration: none;
+}
+
+.contacts-social__gmail::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.contacts-social__gmail:hover::after {
+  width: 100%;
+}
+
+.contacts-social__phone {
+  text-decoration: none;
+}
+
+.contacts-social__phone::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.contacts-social__phone:hover::after {
+  width: 100%;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.contacts-social-item__in {
+  width: 64px;
+  height: 64px;
+  background-image:url(/images/linkedin.png);
+  background-repeat: no-repeat;
+}
+
+.contacts-social-item__inst {
+  width: 64px;
+  height: 64px;
+  background-image:url(/images/inst.png);
+  background-repeat: no-repeat;
+}
+
+.contacts-social-item__git {
+  width: 64px;
+  height: 64px;
+  background-image:url(/images/github-social.png);
+  background-repeat: no-repeat;
+}
+
+.contacts-social-item__fb {
+  width: 64px;
+  height: 64px;
+  background-image:url(/images/fb.png);
+  background-repeat: no-repeat;
+}
+

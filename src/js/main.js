@@ -7,79 +7,54 @@ import './includes/test'
   import 'swiper/css';
   import 'swiper/css/navigation';
   import 'swiper/css/pagination';
+  import barba from '@barba/core';
 
+barba.init({
+  views: [{
+    namespace: 'work',
+    beforeEnter() {
+      Swiper.use([Navigation]);
+      const swiperYoutube = new Swiper('.swiperYoutube', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
 
-Swiper.use([Navigation]);
-
-
-const swiperTitle = new Swiper('.swiperTitle', {
-  // Optional parameters
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+      const swiperDescr = new Swiper('.swiperDescr', {
+        thumbs: {
+          swiperDescr: swiperYoutube
+        },
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
+  }]
 });
 
 
-const swiperYoutube = new Swiper('.swiperYoutube', {
-  // Optional parameters
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
-const swiperDescr = new Swiper('.swiperDescr', {
-  // Optional parameters
-  thumbs: {
-    swiperDescr: swiperYoutube
-  },
-  loop: true,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
-// swiperYoutube.controller.control = swiperDescr,swiperTitle;
-// swiperTitle.controller.control = swiperDescr,swiperYoutube;
+barba.hooks.enter(() => {
+document.querySelectorAll('.header__link').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault()
+  })
+})
 
 const darkbtn = document.querySelector('.dark');
 const body = document.querySelector('body');
@@ -98,8 +73,9 @@ const darkthemebg ='mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
 const canvas = document.querySelector('.canvas');
 canvas.width = header.clientWidth;
 canvas.height = header.clientHeight;
-
-
+console.log(header.clientHeight)
+console.dir(canvas.clientHeight)
+console.dir(canvas)
 const circ = document.querySelectorAll('Circle');
 
 
@@ -188,35 +164,42 @@ function animate () {
 animate();
 
 
-//dark header
-// background: #C33764;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 if (localStorage.getItem("darktheme")) {
   body.setAttribute('data-theme', 'dark')
   videobg.setAttribute('src', 'images/'+darkthemebg)
+  document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
+  document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
 }
 
-document.addEventListener('click', darktheme)
-document.addEventListener('click', lighttheme)
 
-function darktheme(e) {
+
+const darktheme = (e) => {
   if(e.target === darkbtn && !localStorage.getItem("darktheme")) {
     localStorage.clear();
+    if(document.querySelector('.swiper-button-next')) {
+      document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
+      document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
+    }
     body.setAttribute('data-theme', 'dark')
     videobg.setAttribute('src', 'images/'+darkthemebg)
     localStorage.setItem("darktheme", 'darktheme');
   }
 }
 
-function lighttheme(e) {
+const lighttheme = (e) => {
   if(e.target === lightbtn && !localStorage.getItem("lighttheme")) {
     localStorage.clear();
+    if(document.querySelector('.swiper-button-next')) {
+      document.querySelector('.swiper-button-next').style.backgroundColor = '#000';
+      document.querySelector('.swiper-button-prev').style.backgroundColor = '#000';
+    }
     body.setAttribute('data-theme', 'light')
     videobg.setAttribute('src', 'images/'+lightthemebg)
     localStorage.setItem("lighttheme", "lighttheme");
   }
 }
+
+document.addEventListener('click', darktheme)
+document.addEventListener('click', lighttheme)
+});
 
