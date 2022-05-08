@@ -166,7 +166,7 @@ animate();
 
 if (localStorage.getItem("darktheme")) {
   body.setAttribute('data-theme', 'dark')
-  videobg.setAttribute('src', 'images/'+darkthemebg)
+  videobg.setAttribute('src', darkthemebg)
   document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
   document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
 }
@@ -181,7 +181,7 @@ const darktheme = (e) => {
       document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
     }
     body.setAttribute('data-theme', 'dark')
-    videobg.setAttribute('src', 'images/'+darkthemebg)
+    videobg.setAttribute('src', darkthemebg)
     localStorage.setItem("darktheme", 'darktheme');
   }
 }
