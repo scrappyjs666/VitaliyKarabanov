@@ -65,8 +65,8 @@ console.log(videobg.src)
 const header = document.querySelector('header');
 console.dir(header)
 
-const lightthemebg = 'mylivewallpapers.com-Genshin-Impact.mp4';
-const darkthemebg ='mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
+const lightthemebg = 'VitaliyKarabanov/src/images/mylivewallpapers.com-Genshin-Impact.mp4';
+const darkthemebg ='VitaliyKarabanov/src/images/mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
 
 
 //bacground
@@ -166,7 +166,7 @@ animate();
 
 if (localStorage.getItem("darktheme")) {
   body.setAttribute('data-theme', 'dark')
-  videobg.setAttribute('src', 'images/'+darkthemebg)
+  videobg.setAttribute('src', darkthemebg)
   document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
   document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
 }
@@ -181,7 +181,7 @@ const darktheme = (e) => {
       document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
     }
     body.setAttribute('data-theme', 'dark')
-    videobg.setAttribute('src', 'images/'+darkthemebg)
+    videobg.setAttribute('src', darkthemebg)
     localStorage.setItem("darktheme", 'darktheme');
   }
 }
