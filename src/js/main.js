@@ -65,8 +65,8 @@ console.log(videobg.src)
 const header = document.querySelector('header');
 console.dir(header)
 
-const lightthemebg = 'mylivewallpapers.com-Genshin-Impact.mp4';
-const darkthemebg ='mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
+const lightthemebg = '/VitaliyKarabanov/dist/assets/mylivewallpapers.com-Genshin-Impact.f01b0130.mp4';
+const darkthemebg ='/VitaliyKarabanov/dist/assets/mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
 
 
 //bacground
