@@ -65,9 +65,9 @@ console.log(videobg.src)
 const header = document.querySelector('header');
 console.dir(header)
 
-const lightthemebg = 'VitaliyKarabanov/src/images/mylivewallpapers.com-Genshin-Impact.mp4';
-const darkthemebg ='VitaliyKarabanov/src/images/mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
-
+const lightthemebg = '/VitaliyKarabanov/dist/assets/mylivewallpapers.com-Genshin-Impact.f01b0130.mp4';
+const darkthemebg ='/VitaliyKarabanov/src/images/mylivewallpapers.com-Cyberpunk-Girl-Biker.mp4';
+VitaliyKarabanov/dist/assets/mylivewallpapers.com-Genshin-Impact.f01b0130.mp4
 
 //bacground
 const canvas = document.querySelector('.canvas');
