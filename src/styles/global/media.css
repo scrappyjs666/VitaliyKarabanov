@@ -1,0 +1,97 @@
+@media (max-width:1170px) {
+  .container, .canvas {
+  max-width: 970px;
+  }
+  .about-photo__descr {
+    max-width: none;
+  }
+  .about__photo {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .container, .canvas {
+  max-width: 540px;
+  }
+  .about {
+    display: block;
+  }
+  .about__photo {
+    max-width: 280px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-photo__descr {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+  }
+  .about-cv__buttons {
+    padding: 20px;
+  }
+  .about__text {
+    margin: 10px 10px 0px 35px;
+  }
+  .about__photo {
+    padding: 0;
+  }
+  .header {
+    gap: 20px;
+  }
+  .canvas {
+    height: 100%;
+  }
+  .header__list {
+    display: block;
+  }
+  .about-cv__buttons {
+    display: grid;
+    justify-content: center;
+  }
+  .contacts {
+    padding: 20px;
+  }
+  .swiper-slide {
+    width: 350px;
+  }
+  iframe {
+    width: 350px;
+  }
+  .work {
+    padding: 20px;
+  }
+}
+
+@media (max-width:540px) {
+  .container, .canvas {
+  max-width: 320px;
+  }
+  .main-content__container {
+    padding: 0;
+  }
+  .about-photo__image {
+    width: 240px;
+  }
+  .swiper-slide {
+    width: 280px;
+    overflow: hidden;
+  }
+  iframe {
+    width: 280px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 100% !important;
+  }
+  .header__list {
+    display: grid;
+    text-align: center;
+  }
+}
+
+@media (max-width:320px) {
+  .container, .canvas {
+  max-width: auto;
+  }
+}
