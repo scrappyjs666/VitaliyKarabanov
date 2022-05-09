@@ -127,8 +127,10 @@ animate();
 if (localStorage.getItem("darktheme")) {
   body.setAttribute('data-theme', 'dark')
   videobg.setAttribute('src', darkthemebg)
-  document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
-  document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
+  if(document.querySelector('.swiper-button-next')) {
+    document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
+    document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
+  }
 }
 
 
@@ -319,8 +321,10 @@ animate();
 if (localStorage.getItem("darktheme")) {
   body.setAttribute('data-theme', 'dark')
   videobg.setAttribute('src', darkthemebg)
-  document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
-  document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
+  if(document.querySelector('.swiper-button-next')) {
+    document.querySelector('.swiper-button-next').style.backgroundColor = '#fff';
+    document.querySelector('.swiper-button-prev').style.backgroundColor = '#fff';
+    }
 }
 
 
